@@ -90,7 +90,7 @@ function promedioResultadosTest(resultadosTest) {
   // Tu código:
   let suma = 0
 for (let i = 0; i < resultadosTest.length; i++) {
-  suma = suma += resultadosTest[i]
+   suma += resultadosTest[i]
 } 
 return suma/resultadosTest.length;
 }
@@ -115,7 +115,7 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   let producto = 0;
-  let array = [];
+  let array = []; 
   if (arguments === 0) {
     return 0;
   } else if (arguments.length === 1) {
@@ -123,8 +123,10 @@ function multiplicarArgumentos() {
   }
     for (let i = 0; i < arguments.length; i++) {
       array.push(arguments[i])
+
     if (array.length === arguments.length) {
       producto = array[0]
+
     for (let x = 1; x < array.length; x++) {
       producto = producto * array[x]
     }
@@ -168,7 +170,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   let string = n.toString();
-  if (string[0] == 9) {
+  if (string[0] === "9") {
   return true; 
   } else {
    return false;
@@ -181,16 +183,21 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  let elemento = 0;
-  for (let i = 0; i < arreglo.length; i++) {
-    elemento = arreglo[i]
-    if (elemento === arreglo[i+1]) {
-      return true
-    } else {
-      return false
-    }
+  let arreglo2 = [];
+  for (let i = 0; i <= arreglo.length; i++) {
+    if (arreglo[i] === arreglo[i+1]) {
+      arreglo2.push(arreglo[i])
+    } 
   }
-} 
+  if (arreglo2.length === arreglo.length){
+    return true
+  } else {
+    return false
+  }
+
+  }
+
+ 
 
 
 function mesesDelAño(array) {
@@ -210,7 +217,7 @@ function mesesDelAño(array) {
     return "No se encontraron los meses pedidos"
   }
   
-  }
+}
 
 
 function mayorACien(array) {
