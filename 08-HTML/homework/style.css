@@ -1,0 +1,25 @@
+#thirdDiv {
+    width: 500px;
+    height: 600px;
+    background-color: blue;
+    padding: 50px;
+    border: black solid;
+}
+
+.divClass {
+    color: red;
+}
+
+#spanId {
+    color: red;
+    font-size: 10px;
+    margin: 50px;
+}
+
+h1 {
+    color: aqua;
+}
+
+img {
+    width: 400px;
+}
