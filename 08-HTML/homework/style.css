@@ -1,13 +1,21 @@
 #thirdDiv {
-    width: 500px;
     height: 600px;
+    width: 1200px;
     background-color: blue;
-    padding: 50px;
+    padding: 5px;
     border: black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .divClass {
+    height: 250px;
     color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 #spanId {
@@ -21,5 +29,13 @@ h1 {
 }
 
 img {
+    text-align: center;
     width: 400px;
+    height: 400px;
+}
+
+body {
+    background-image:url(https://preview.redd.it/73i3urlos5l71.png?auto=webp&s=26a208cc4ca0cf3701710c05440d2ef5f64ad2e8);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
