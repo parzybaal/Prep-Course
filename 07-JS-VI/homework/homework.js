@@ -34,7 +34,7 @@ function sumarArray(numeros, cb) {
   //Tu código:
   let suma = 0;
   for (let i = 0; i < numeros.length; i++) {
-    suma = suma += numeros[i]
+    suma += numeros[i]
   }
   return cb (suma);
 }

@@ -10,6 +10,11 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  let array = [];
+  for (const prop in objeto) {
+    array.push([prop,objeto[prop]])
+  }
+  return array
 }
 
 
@@ -18,7 +23,20 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  let result={}; //Objeto que guardará el resultado
+
+  for(let i=0; i<string.length; i++){
+      if (result[string[i]]){ //Existe la propiedad???
+          result[string[i]]++; //Si existe, le sumamos 1
+      }
+      else{ //No existe. La creamos con valor 1
+          result[string[i]] = 1; 
+      }
+  }
+  return result;
 }
+
+
 
 
 function capToFront(s) {
@@ -26,6 +44,17 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  let mayus = "";
+  let minus = "";
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === s[i].toUpperCase()) {
+      mayus += s[i];
+    } else {
+      minus += s[i];
+    }
+  }
+
+  return mayus + minus;
 }
 
 
